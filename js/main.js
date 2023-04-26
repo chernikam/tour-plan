@@ -8,4 +8,5 @@ const swiper = new Swiper('.swiper', {
     nextEl: '.slider-button--next',
     prevEl: '.slider-button--prev',
   },
+  effect: 'fade',
 });
