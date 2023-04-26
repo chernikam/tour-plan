@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Best Tour Plan - Hotel Booing</title>
-    <link rel="stylesheet" href="css/style.css" />
-
+    <title>Best Tour Plan - Hotel Booking</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="navbar">
@@ -102,9 +102,33 @@
           </div>
         </div>
         <!-- /.hotel-info -->
+        <div class="hotel-grid">
+          <div class="slider">
+            <!-- Slider main container -->
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="img/slide.jpg" alt="Slide" /></div>
+                <div class="swiper-slide"><img src="img/slide.jpg" alt="Slide" /></div>
+                <div class="swiper-slide"><img src="img/slide.jpg" alt="Slide" /></div>
+                ...
+              </div>
+
+              <!-- If we need navigation buttons -->
+              <button class="slider-button slider-button--prev"></button>
+              <button class="slider-button slider-button--next"></button>
+              <!-- /.swiper -->
+            </div>
+          </div>
+          <!-- /.slider -->
+        </div>
+        <!-- /.hotel-grid -->
       </div>
       <!-- /.container -->
     </section>
     <!-- /.hotel -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
