@@ -709,7 +709,6 @@ template {
   padding-left: 33px;
   padding-right: 75px;
   font-style: normal;
-  font-weight: 300;
   font-size: 14px;
   line-height: 18px;
 }
@@ -852,6 +851,19 @@ template {
     width: 92%;
     align-items: flex-start;
   }
+  .newsletter-title {
+    font-style: normal;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .newsletter-title__strong {
+    font-style: normal;
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .subscribe {
+    width: 100%;
+  }
 }
 @media (max-width: 576px) {
   .logo {
@@ -869,7 +881,10 @@ template {
   .newsletter__title {
     margin-bottom: 37px;
   }
-  .subscribe {
-    width: 100%;
+}
+@media (max-width: 320px) {
+  .newsletter {
+    max-width: 320px;
+    max-height: 319px;
   }
 }/*# sourceMappingURL=style.css.map */
