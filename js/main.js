@@ -17,7 +17,7 @@ const hotelSlider = new Swiper('.hotel-slider', {
 
 const reviewsSlider = new Swiper('.reviews-slider', {
   // Optional parameters
-  autoHeight: true,
+
   loop: true,
   slidesPerView: 1,
   keyboard: {
