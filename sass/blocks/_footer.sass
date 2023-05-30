@@ -24,10 +24,10 @@
       justify-content: space-between
     &-network
       display: flex
-      align-content: center
+      align-items: center
       grid-row: 2 / 4
       grid-column: span 2
-  &__contact-details
+  &__contacts-details
     grid-column: span 2
   &__contacts-form
     grid-column: span 2
@@ -36,6 +36,11 @@
     align-items: center
     justify-content: space-between
     flex-wrap: wrap
+    &-footer 
+      display: flex
+      justify-content: space-between
+      align-items: center
+      flex-basis: 100%
   &__ul
     padding: 0
     margin: 0
@@ -85,12 +90,15 @@
     flex-basis: 48%
   
   &__message
+    max-width: 539px
+    max-height: 123px
     border-radius: 4px
     background-color: #fff
     border: none
     padding: 18px 23px
     flex-basis: 100%
     margin-bottom: 23px
+    resize: none
   &__button
     min-width: 160px
     min-height: 50px
@@ -121,10 +129,12 @@
       display: flex
       align-items: center
       justify-content: space-between
+      
       font-style: normal
       font-weight: 400
       font-size: 12px
       line-height: 15px
+      color: $footer-text-color
       
       
     &__link
@@ -132,7 +142,7 @@
       list-style-type: none
       margin-right: 20px
       cursor: pointer
-      color: $light
+      color: $footer-text-color
 
       
   &__credit-cards
