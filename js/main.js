@@ -57,4 +57,10 @@ $(document).ready(function () {
     modalOverlay.removeClass('modal__overlay--visible');
     modalDialog.removeClass('modal__dialog--visible');
   }
+
+  var body = $('body');
+  body.on('keydown', function (e) {
+    var code = e.keyCode;
+    if (code == 27) closeModal(e);
+  });
 });
