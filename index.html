@@ -495,12 +495,13 @@
           <!-- /.footer__contacts-details -->
           <div class="footer__contacts-form">
             <h3 class="footer__title footer__title--mb-3">Send us a messages</h3>
-            <form action="send.php" method="post" class="footer__form">
+            <form class="footer__form">
               <input
                 type="text"
                 class="input footer__input"
                 placeholder="Your Full Name*"
                 name="name"
+                minlength="2"
               />
               <input
                 type="text"
@@ -541,7 +542,7 @@
       <div class="modal__dialog">
         <a href="#" class="modal__close"><img src="img/close.svg" alt="icon: close" /></a>
         <h3 class="modal__title modal__title--mb-3">Booking</h3>
-        <form action="send.php" method="post" class="modal__form">
+        <form class="modal__form">
           <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" />
           <input type="text" class="input modal__input" placeholder="Phone Number*" name="phone" />
           <input type="text" class="input modal__input" placeholder="Email*" name="email" />
@@ -558,8 +559,9 @@
     <!-- /.modal -->
     <script src="js/jquery-3.7.0.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/parallax.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

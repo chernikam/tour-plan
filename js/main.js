@@ -63,4 +63,34 @@ $(document).ready(function () {
     var code = e.keyCode;
     if (code == 27) closeModal(e);
   });
+
+  $('.modal__form').each(function () {
+    $(this).validate({
+      errorClass: 'invalid',
+      rules: {
+        name: 'required',
+        phone: {
+          required: true,
+          minlength: 11,
+        },
+        email: {
+          required: true,
+          email: true,
+        },
+      },
+      messages: {
+        name: {
+          required: 'Please specify your name',
+        },
+        phone: {
+          required: 'We need your phone to contact you',
+          minlength: 'Your phone number must be at least 11 digits long',
+        },
+        email: {
+          required: 'We need your email address to contact you',
+          email: 'Your email address must be in the format of name@domain.com',
+        },
+      },
+    });
+  });
 });

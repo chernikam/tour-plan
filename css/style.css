@@ -720,6 +720,9 @@ img {
   line-height: 160%;
   color: #BDBDBD;
 }
+.footer__item-phone-numbers {
+  flex-direction: column;
+}
 .footer__item--mb-2 {
   margin-bottom: 20px;
 }
